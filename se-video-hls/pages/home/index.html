@@ -1,0 +1,41 @@
+<!-- 以下是组件，在vue里，是写在template的部分，se开头的组件都可在组件看板中找到说明 -->
+<se-row class="home" :class="{ 'home--logined': isLogined }" align="end">
+  <se-col class="home__avatar" :span="12">
+      <se-video
+      ref="myVideo"
+      src="http://hdl3abak.douyucdn.cn/live/8566781rqWpWDMoi/playlist.m3u8?wsAuth=4a1942d6c41eae1c3b4326a024eced50&token=cpn-windowsmpro-0-8566781-871e7fa5e337ac6cbe966898dc708210f9ba2a9769fc6747&logo=0&expire=3600&did=b35d4a4d47b59fd385d747e7c87fa0d1&origin=ws&vhost=play4&only-audio=1"
+      kernel="hls"
+      title="测试视频"
+      :islive="true"
+      :poster="poster"
+      :controls="controls"
+      :muted="muted"
+      :loop="loop"
+      :autoplay="true"
+      :initial-time="initTime"
+      :object-fit="objectFit"
+      :show-fullscreen-btn="showFullscreenBtn"
+      :show-mute-btn="showMuteBtn"
+      @play="onPlay"
+      @pause="onPause"
+      @ended="onEnded"
+      @timeupdate="onTimeupdate"
+      @fullscreenchange="onFullscreenchange"
+      @waiting="onWaiting"
+      @progress="onProgress"
+      @error="onError"
+      ></se-video>
+      <se-button @click="emitPlay">播放</se-button>
+      <se-button @click="emitPause">暂停</se-button>
+      <se-button @click="emitStop">停止</se-button>
+      <se-button @click="startLoad">开始加载</se-button>
+      <se-button @click="stopLoad">停止加载</se-button>
+      <se-button @click="requestFullScreen">进入全屏</se-button>
+      <se-button @click="exitFullScreen">退出全屏</se-button>
+  </se-col>
+  <se-col class="home__more" :span="12">
+    <span class="more__text" type="text" @click="navigateToMore()"
+      >更多介绍</span
+    >
+  </se-col>
+</se-row>

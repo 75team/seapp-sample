@@ -1,0 +1,11 @@
+/** pages/more/index.css */
+.more {
+  height: 100vh;
+  max-width: 640px;
+  padding: 25px 25px 40px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+.more__content {
+  text-align: justify;
+}
