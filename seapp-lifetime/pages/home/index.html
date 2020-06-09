@@ -1,0 +1,64 @@
+<!-- 以下是组件，在vue里，是写在template的部分，se开头的组件都可在组件看板中找到说明 -->
+<div style="width:95%;margin:0 auto;top:0;">
+  <se-row class="tabs">
+    <se-col class="col-item active">
+      <router-link to="/">查单词</router-link>
+    </se-col>
+    <se-col class="col-item">
+      <router-link to="/pages/wordbook/index">单词本</router-link>
+    </se-col>
+  </se-row>
+
+  <se-row class="searcher" gutter="5px">
+    <se-col>
+      <se-search
+        placeholder="请输入英文单词"
+        :value="this.nowWord"
+        @keyup="input"
+        @change="change"
+        @clean="afterClean"
+      ></se-search>
+    </se-col>
+
+    <se-col>
+      <se-button type="primary" @click="getWordDesc">查询</se-button>
+    </se-col>
+  </se-row>
+
+  <se-row v-if="isSearching===true && isBanned===false">
+    <se-col>
+      <se-spin type="global"></se-spin>
+    </se-col>
+  </se-row>
+
+  <se-row class="md-chinese" v-if="showTranslate===true">
+    <se-col :span="8">
+      <se-row v-if="showTranslate===true">
+        <se-col :span="10">
+          <se-tag type="primary">中文释义</se-tag>
+          {{wordDesc}}
+        </se-col>
+        <se-col :span="2">
+          <se-button type="default" title="加入单词本" @click="addWordBook">
+            加入单词本
+          </se-button>
+        </se-col>
+      </se-row>
+    </se-col>
+  </se-row>
+
+  <se-row v-if="isBanned===true">
+    <se-col :span="8">
+      查询次数过多，请稍候再试...
+    </se-col>
+  </se-row>
+
+  <se-modal title="加入成功" :visible.sync="modalVisible" width="30%" mask>
+    <span>{{modalMessage}}</span>
+    <template v-slot:footer>
+      <se-button type="primary" @click="modalVisible = false">
+        确定
+      </se-button>
+    </template>
+  </se-modal>
+</div>

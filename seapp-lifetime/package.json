@@ -1,0 +1,13 @@
+{
+  "name": "seapp-lifetime",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "builder watch",
+    "build": "builder build"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@qihoo/seapp-builder": "^1.1.8"
+  }
+}

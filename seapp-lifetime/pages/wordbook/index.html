@@ -1,0 +1,21 @@
+<div style="width:95%;margin:0 auto;top:0;">
+    <se-row class="tabs">
+        <se-col class="col-item">
+          <router-link to="/">查单词</router-link>
+        </se-col>
+        <se-col class="col-item active">
+          <router-link to="/pages/wordbook/index">单词本</router-link>
+        </se-col>
+    </se-row>
+    <div class="list" v-if="words.length">
+      <se-row v-for="(item, index) in words.slice(ps*(pn-1), ps*pn)" :key="index">
+        <se-col :span="10">
+            {{item}}
+        </se-col>
+        <se-col :span="2">
+            <router-link :to="{path:'/',query:{word:item}}">【查词】</router-link>
+        </se-col>
+      </se-row>
+      <se-pagination class="pn" :total="words.length" :ps="this.ps" @change="pageChange" />
+    </div>
+</div>
