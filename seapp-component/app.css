@@ -1,0 +1,8 @@
+body {
+  --default-color: #13cbda;
+  font-size: 14px;
+  color: #222;
+}
+.more__navigator:hover .se-breadcrumb--link {
+  color: var(--default-color);
+}
