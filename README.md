@@ -6,4 +6,4 @@
 
 1. 视频hls码流直播 [se-video-hls](se-video-hls) 
 2. 生命周期展示 [seapp-lifetime](seapp-lifetime) 
-3. 局部和全局组件注册展示 [seapp-lifetime](seapp-component) 
+3. 局部和全局组件注册展示 [seapp-component](seapp-component) 
