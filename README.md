@@ -4,6 +4,8 @@
 
 这个代码仓库为360小程序 部分示例程序：
 
+1. 最简单的小程序 [classic](classic) 
+1. 全局数据存取 [seapp-global-data](seapp-global-data) 
 1. 视频hls码流直播 [se-video-hls](se-video-hls) 
-2. 生命周期展示 [seapp-lifetime](seapp-lifetime) 
-3. 局部和全局组件注册展示 [seapp-component](seapp-component) 
+1. 生命周期展示 [seapp-lifetime](seapp-lifetime) 
+1. 局部和全局组件注册展示 [seapp-component](seapp-component) 

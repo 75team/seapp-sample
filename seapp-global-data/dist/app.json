@@ -1,0 +1,25 @@
+{
+  "pages": [
+    {
+      "route": "pages/home/index",
+      "window": {
+        "navigationBarTitleText": "view"
+      }
+    },
+    {
+      "route": "pages/more/index",
+      "window": {}
+    }
+  ],
+  "window": {
+    "enableLargeWindow": true,
+    "showRefreshButton": true,
+    "windowWidth": 1138,
+    "windowHeight": 640,
+    "minWindowWidth": 400,
+    "minWindowHeight": 400,
+    "enableResize": true
+  },
+  "sdkversion": "1.0.0",
+  "sitemapLocation": "sitemap.json"
+}
