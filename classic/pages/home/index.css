@@ -1,0 +1,55 @@
+.home {
+  height: 100vh;
+  min-height: 100px;
+  min-width: 376px;
+  padding: 25px 25px 40px;
+  box-sizing: border-box;
+  text-align: center;
+}
+.home--logined .home__logo {
+  place-self: start auto;
+  text-align: left;
+}
+.home--logined .logo__img {
+  height: 32px;
+  width: 32px;
+  vertical-align: middle;
+}
+.home--logined .logo__title {
+  display: inline;
+  font-size: 16px;
+  margin-left: 4px;
+}
+.home__logo {
+  place-self: center center;
+}
+.logo__img {
+  width: 80px;
+  height: 80px;
+}
+.logo__title {
+  margin-top: 12px;
+}
+.home__avatar {
+  align-self: start;
+}
+.avatar__img {
+  width: 96px;
+  height: 96px;
+  border-radius: 50%;
+}
+.avatar__name {
+  font-size: 18px;
+  margin: 12px 0 0;
+}
+.avatar__txt {
+  font-size: 16px;
+}
+.more__text {
+  color: #222;
+  cursor: pointer;
+  text-decoration-line: underline;
+}
+.more__text:hover {
+  color: var(--default-color);
+}

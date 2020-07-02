@@ -1,0 +1,19 @@
+<!-- 以下是组件，在vue里，是写在template的部分，se开头的组件都可在组件看板中找到说明 -->
+<se-row class="home" :class="{ 'home--logined': isLogined }" align="end">
+  <se-col class="home__logo" :span="12">
+    <img
+      class="logo__img"
+      src="../../public/images/logo.png"
+      alt="360小程序ico"
+    />
+    <p class="logo__title">360小程序</p>
+  </se-col>
+  <se-col class="home__avatar" :span="12">
+    <span class="avatar__txt">Hello World!</span>
+  </se-col>
+  <se-col class="home__more" :span="12">
+    <span class="more__text" type="text" @click="navigateToMore()"
+      >更多介绍</span
+    >
+  </se-col>
+</se-row>
