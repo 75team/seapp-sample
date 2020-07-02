@@ -15,5 +15,5 @@ yarn serve
 yarn build
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+### 修改点
+主要的修改点在pages/home/index.js、pages/home/index.html和pages/more/index.js
