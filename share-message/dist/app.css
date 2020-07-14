@@ -1,0 +1,77 @@
+body {
+  --default-color: #13cbda;
+  font-size: 14px;
+  color: #222;
+}
+.more__navigator:hover .se-breadcrumb--link {
+  color: var(--default-color);
+}
+
+.home[data-v-4b3bbf58] {
+  height: 100vh;
+  min-height: 100px;
+  min-width: 376px;
+  padding: 25px 25px 40px;
+  box-sizing: border-box;
+  text-align: center;
+}
+.home--logined .home__logo[data-v-4b3bbf58] {
+  place-self: start auto;
+  text-align: left;
+}
+.home--logined .logo__img[data-v-4b3bbf58] {
+  height: 32px;
+  width: 32px;
+  vertical-align: middle;
+}
+.home--logined .logo__title[data-v-4b3bbf58] {
+  display: inline;
+  font-size: 16px;
+  margin-left: 4px;
+}
+.home__logo[data-v-4b3bbf58] {
+  place-self: center center;
+}
+.logo__img[data-v-4b3bbf58] {
+  width: 80px;
+  height: 80px;
+}
+.logo__title[data-v-4b3bbf58] {
+  margin-top: 12px;
+}
+.home__avatar[data-v-4b3bbf58] {
+  align-self: start;
+}
+.avatar__img[data-v-4b3bbf58] {
+  width: 96px;
+  height: 96px;
+  border-radius: 50%;
+}
+.avatar__name[data-v-4b3bbf58] {
+  font-size: 18px;
+  margin: 12px 0 0;
+}
+.avatar__txt[data-v-4b3bbf58] {
+  font-size: 16px;
+}
+.more__text[data-v-4b3bbf58] {
+  color: #222;
+  cursor: pointer;
+  text-decoration-line: underline;
+}
+.more__text[data-v-4b3bbf58]:hover {
+  color: var(--default-color);
+}
+
+/** pages/more/index.css */
+.more[data-v-6b68be9e] {
+  height: 100vh;
+  max-width: 640px;
+  padding: 25px 25px 40px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+.more__content[data-v-6b68be9e] {
+  text-align: justify;
+}
+
