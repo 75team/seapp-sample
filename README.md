@@ -10,3 +10,4 @@
 1. 生命周期展示 [seapp-lifetime](seapp-lifetime) 
 1. 局部和全局组件注册展示 [seapp-component](seapp-component) 
 1. 分享 [share-message](share-message) 
+1. vuex [vuex-example](vuex-example) 

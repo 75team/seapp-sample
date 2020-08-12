@@ -1,0 +1,13 @@
+{
+  "name": "vuex-example",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "builder watch",
+    "build": "builder build"
+  },
+  "devDependencies": {
+    "@qihoo/seapp-builder": "^1.0.0",
+    "@qihoo/vue-cli-plugin-mpqh": "latest"
+  }
+}
